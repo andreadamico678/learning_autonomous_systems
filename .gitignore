@@ -1,0 +1,48 @@
+# Toolchain & Build Artifacts
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+build/
+dist/
+
+# Zephyr RTOS specifics
+.ninja_deps
+.ninja_log
+zephyr/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# Godot specifics
+.godot/
+*.translation
+export_presets.cfg
+
+# Python (Control Scripts / Tools)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+ENV/
+
+# Editor / IDE settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*~
+
+# OS specific files
+.DS_Store
+Thumbs.db
