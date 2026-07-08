@@ -1,0 +1,17 @@
+/ {
+    aliases {
+        /* We are creating a custom name for our C code to use */
+        my-custom-led = &external_led;
+    };
+
+    leds {
+        compatible = "gpio-leds";
+        external_led: led_external {
+            /* P1.02 = Arduino header D14
+             * Not claimed by GPIO forwarder, LEDs, or buttons.
+             * (P1.05 was taken by nrf-gpio-forwarder for net core UART) */
+            gpios = <&gpio1 2 GPIO_ACTIVE_HIGH>;
+            label = "External Green LED";
+        };
+    };
+};
